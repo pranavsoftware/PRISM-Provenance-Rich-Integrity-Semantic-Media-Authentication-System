@@ -1,6 +1,6 @@
-# Blockchain-Based Audio-Visual Content Authentication System
+﻿# Blockchain-Based Audio-Visual Content Authentication System
 
-## PRISM — 5-Pillar Deepfake Detection with Blockchain Provenance
+## PRISM â€” 5-Pillar Deepfake Detection with Blockchain Provenance
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org)
@@ -29,7 +29,7 @@
 
 ## Overview
 
-This project implements **PRISM (Provenance-Rich Integrity & Semantic Media)** — a blockchain-secured video authentication system that combines 5-pillar multi-modal deep learning with cryptographic provenance tracking to detect deepfake manipulations in audio-visual content.
+This project implements **PRISM (Provenance-Rich Integrity & Semantic Media)** â€” a blockchain-secured video authentication system that combines 5-pillar multi-modal deep learning with cryptographic provenance tracking to detect deepfake manipulations in audio-visual content.
 
 ### Problem Statement
 
@@ -66,63 +66,63 @@ jupyter notebook main.ipynb
 ### What Makes This System Unique?
 
 ```
-┌─────────────────────────────────────────────────────────────────────┐
-│                       KEY INNOVATIONS                                │
-├─────────────────────────────────────────────────────────────────────┤
-│                                                                     │
-│  1.  5-PILLAR PRISM FINGERPRINT (473-dim)                           │
-│      • Fuses 5 independent feature domains into one fingerprint     │
-│      • VideoHash + Audio + Geo-FRTA + Motion + AVSync               │
-│      • 5 per-pillar anomaly scores for explainability               │
-│                                                                     │
-│  2.  CMPA-AuthCNN (Cross-Modal Pillar Attention)                    │
-│      • Custom network with pillar-level attention mechanism         │
-│      • Anomaly gating learns which pillars are most informative     │
-│      • 15% pillar dropout for robustness                            │
-│                                                                     │
-│  3.  STACKING ENSEMBLE (CNN + RF + GBM)                             │
-│      • Meta-learner: Logistic Regression over base model probs      │
-│      • Statistically significantly better than CNN alone            │
-│        (McNemar p = 0.0072)                                         │
-│                                                                     │
-│  4.  DHPC BLOCKCHAIN PROVENANCE CHAINS                              │
-│      • SHA-256 hash-linked blocks for tamper evidence               │
-│      • Validated chain integrity with tamper detection demo         │
-│      • Provenance-rich: device, timestamp, fingerprint per block    │
-│                                                                     │
-└─────────────────────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                       KEY INNOVATIONS                                â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚                                                                     â”‚
+â”‚  1.  5-PILLAR PRISM FINGERPRINT (473-dim)                           â”‚
+â”‚      â€¢ Fuses 5 independent feature domains into one fingerprint     â”‚
+â”‚      â€¢ VideoHash + Audio + Geo-FRTA + Motion + AVSync               â”‚
+â”‚      â€¢ 5 per-pillar anomaly scores for explainability               â”‚
+â”‚                                                                     â”‚
+â”‚  2.  CMPA-AuthCNN (Cross-Modal Pillar Attention)                    â”‚
+â”‚      â€¢ Custom network with pillar-level attention mechanism         â”‚
+â”‚      â€¢ Anomaly gating learns which pillars are most informative     â”‚
+â”‚      â€¢ 15% pillar dropout for robustness                            â”‚
+â”‚                                                                     â”‚
+â”‚  3.  STACKING ENSEMBLE (CNN + RF + GBM)                             â”‚
+â”‚      â€¢ Meta-learner: Logistic Regression over base model probs      â”‚
+â”‚      â€¢ Statistically significantly better than CNN alone            â”‚
+â”‚        (McNemar p = 0.0072)                                         â”‚
+â”‚                                                                     â”‚
+â”‚  4.  DHPC BLOCKCHAIN PROVENANCE CHAINS                              â”‚
+â”‚      â€¢ SHA-256 hash-linked blocks for tamper evidence               â”‚
+â”‚      â€¢ Validated chain integrity with tamper detection demo         â”‚
+â”‚      â€¢ Provenance-rich: device, timestamp, fingerprint per block    â”‚
+â”‚                                                                     â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### Comparison with Existing Methods
 
 | Feature | Traditional | Single-Modal DNN | **PRISM (Ours)** |
 |---------|-------------|-----------------|------------------|
-| Video Analysis | ✅ | ✅ | ✅ |
-| Audio Analysis | ❌ | ❌ | ✅ |
-| Geometric Analysis | ❌ | Partial | ✅ (InsightFace) |
-| Motion Analysis | ❌ | ❌ | ✅ |
-| Lip-Sync Analysis | ❌ | ❌ | ✅ |
-| Blockchain Security | ❌ | ❌ | ✅ |
-| Per-Pillar Explainability | ❌ | ❌ | ✅ |
+| Video Analysis | âœ… | âœ… | âœ… |
+| Audio Analysis | âŒ | âŒ | âœ… |
+| Geometric Analysis | âŒ | Partial | âœ… (InsightFace) |
+| Motion Analysis | âŒ | âŒ | âœ… |
+| Lip-Sync Analysis | âŒ | âŒ | âœ… |
+| Blockchain Security | âŒ | âŒ | âœ… |
+| Per-Pillar Explainability | âŒ | âŒ | âœ… |
 
 ---
 
 ## System Architecture
 
 ```
-┌──────────────────────────────────────────────────────────────────────────────┐
-│                      PRISM AUTHENTICATION ARCHITECTURE                       │
-│                                                                              │
-│  Input → [P1:Hash|P2:Audio|P3:Geo|P4:Motion|P5:Sync] → PRISM Fusion (473d) │
-│       → CMPA-AuthCNN + RF + GBM → Stacking Ensemble → Auth/Fake + Chain    │
-└──────────────────────────────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                      PRISM AUTHENTICATION ARCHITECTURE                       â”‚
+â”‚                                                                              â”‚
+â”‚  Input â†’ [P1:Hash|P2:Audio|P3:Geo|P4:Motion|P5:Sync] â†’ PRISM Fusion (473d) â”‚
+â”‚       â†’ CMPA-AuthCNN + RF + GBM â†’ Stacking Ensemble â†’ Auth/Fake + Chain    â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 The system operates in **three phases**:
 
-1. **Feature Extraction** — 5 parallel pillar extractors process video frames and audio
-2. **Fusion & Classification** — PRISM fusion creates 473-dim fingerprint → CMPA-AuthCNN + RF + GBM stacking ensemble
-3. **Provenance & Verification** — DHPC blockchain chain creation + tamper detection
+1. **Feature Extraction** â€” 5 parallel pillar extractors process video frames and audio
+2. **Fusion & Classification** â€” PRISM fusion creates 473-dim fingerprint â†’ CMPA-AuthCNN + RF + GBM stacking ensemble
+3. **Provenance & Verification** â€” DHPC blockchain chain creation + tamper detection
 
 *For the full architecture diagram and cell-by-cell documentation, see [ARCHITECTURE.md](ARCHITECTURE.md).*
 
@@ -137,7 +137,7 @@ The system operates in **three phases**:
 | P3 | Geo-FRTA | 128 | InsightFace RetinaFace landmarks | Detect facial geometry anomalies |
 | P4 | Motion Sig | 64 | Farneback optical flow | Detect unnatural motion patterns |
 | P5 | AVSync | 20 | Lip-audio temporal correlation | Detect lip-sync mismatches |
-| — | Anomaly | 5 | Per-pillar anomaly scores | Explainability layer |
+| â€” | Anomaly | 5 | Per-pillar anomaly scores | Explainability layer |
 
 **Total**: 468 pillar dimensions + 5 anomaly scores = **473-dim PRISM fingerprint**
 
@@ -163,7 +163,7 @@ The system operates in **three phases**:
 | Source | LAV-DF (136,304 videos from Kaggle) |
 | Sampled | 2,000 videos (1,000 auth + 1,000 fake) |
 | Frames/Video | 15 (uniformly sampled) |
-| Frame Size | 112 × 112 px |
+| Frame Size | 112 Ã— 112 px |
 | Audio | 22,050 Hz sample rate |
 | Split | Train 1,400 / Val 300 / Test 300 |
 
@@ -191,15 +191,15 @@ MCC                  : 0.6374
 
 ### 5-Fold Cross-Validation
 
-| Metric | Mean ± Std | 95% CI |
+| Metric | Mean Â± Std | 95% CI |
 |--------|-----------|--------|
-| Accuracy | 0.781 ± 0.017 | [0.748, 0.814] |
-| F1-Score | 0.799 ± 0.013 | [0.773, 0.825] |
-| AUC-ROC  | 0.839 ± 0.017 | [0.805, 0.872] |
+| Accuracy | 0.781 Â± 0.017 | [0.748, 0.814] |
+| F1-Score | 0.799 Â± 0.013 | [0.773, 0.825] |
+| AUC-ROC  | 0.839 Â± 0.017 | [0.805, 0.872] |
 
 ### Statistical Significance
 
-McNemar's test (CNN vs Ensemble): χ² = 7.22, **p = 0.0072** — ensemble is statistically significantly better.
+McNemar's test (CNN vs Ensemble): Ï‡Â² = 7.22, **p = 0.0072** â€” ensemble is statistically significantly better.
 
 ### Inference Latency
 
@@ -233,7 +233,7 @@ All figures are generated by the notebook and saved to `figures/`.
 
 27-panel figure comparing 3 matched authentic/deepfake video pairs across all 5 pillars with per-pillar anomaly scores, fingerprint distances, frame thumbnails, and confidence scores.
 
-### 4. Comprehensive Benchmark (Cell 28 — inline)
+### 4. Comprehensive Benchmark (Cell 28 â€” inline)
 
 13-panel dashboard displayed in the notebook: PR curves, ROC with confidence band, score distributions, confusion matrix heatmap, model accuracy comparison, feature importance pie chart, threshold sensitivity analysis, CV stability box plot, anomaly radar chart, ensemble metrics breakdown, latency profile, and summary card.
 
@@ -280,7 +280,7 @@ kagglehub>=0.1.0
 jupyter notebook main.ipynb
 ```
 
-Run all cells sequentially (Cells 1–30). The notebook will:
+Run all cells sequentially (Cells 1â€“30). The notebook will:
 1. Install packages and download the LAV-DF dataset (~136K videos)
 2. Sample 2,000 balanced videos and extract frames/audio
 3. Initialize all 5 pillar extractors
@@ -295,37 +295,37 @@ Run all cells sequentially (Cells 1–30). The notebook will:
 
 ```
 project/
-├── main.ipynb                 # Main notebook (30 cells)
-├── ARCHITECTURE.md            # Full architecture & output documentation
-├── README.md                  # This file
-├── export_chains.py           # Provenance chain export utility
-├── extract_outputs.py         # Output extraction utility
-├── main_old_backup.ipynb      # Previous notebook version (backup)
-├── figures/
-│   ├── dataset_overview.png   # Class balance + sample frames (Cell 8)
-│   ├── evaluation_results.png # 10-panel evaluation dashboard (Cell 20)
-│   ├── pillar_comparison.png  # 27-panel head-to-head comparison (Cell 26)
-│   └── reports/               # Generated reports directory
-├── video_auth_db/
-│   ├── best_auth_cnn.pt       # Trained CMPA-AuthCNN model weights
-│   ├── faiss_index.bin        # FAISS nearest-neighbour search index
-│   ├── fingerprints.npy       # 2000×473 float32 fingerprint matrix
-│   ├── fingerprints_meta.json # Per-video fingerprint metadata
-│   ├── metadata.csv           # Video metadata (IDs, labels, paths)
-│   └── stats.json             # Database statistics
-└── provenance_chains/
-    ├── demo_chain.json        # 10-block DHPC provenance chain (validated)
-    └── hash_comparisons.json  # Video hash similarity records
+â”œâ”€â”€ main.ipynb                 # Main notebook (30 cells)
+â”œâ”€â”€ ARCHITECTURE.md            # Full architecture & output documentation
+â”œâ”€â”€ README.md                  # This file
+â”œâ”€â”€ export_chains.py           # Provenance chain export utility
+â”œâ”€â”€ extract_outputs.py         # Output extraction utility
+â”œâ”€â”€ main_old_backup.ipynb      # Previous notebook version (backup)
+â”œâ”€â”€ figures/
+â”‚   â”œâ”€â”€ dataset_overview.png   # Class balance + sample frames (Cell 8)
+â”‚   â”œâ”€â”€ evaluation_results.png # 10-panel evaluation dashboard (Cell 20)
+â”‚   â”œâ”€â”€ pillar_comparison.png  # 27-panel head-to-head comparison (Cell 26)
+â”‚   â””â”€â”€ reports/               # Generated reports directory
+â”œâ”€â”€ video_auth_db/
+â”‚   â”œâ”€â”€ best_auth_cnn.pt       # Trained CMPA-AuthCNN model weights
+â”‚   â”œâ”€â”€ faiss_index.bin        # FAISS nearest-neighbour search index
+â”‚   â”œâ”€â”€ fingerprints.npy       # 2000Ã—473 float32 fingerprint matrix
+â”‚   â”œâ”€â”€ fingerprints_meta.json # Per-video fingerprint metadata
+â”‚   â”œâ”€â”€ metadata.csv           # Video metadata (IDs, labels, paths)
+â”‚   â””â”€â”€ stats.json             # Database statistics
+â””â”€â”€ provenance_chains/
+    â”œâ”€â”€ demo_chain.json        # 10-block DHPC provenance chain (validated)
+    â””â”€â”€ hash_comparisons.json  # Video hash similarity records
 ```
 
 ---
 
 ## Future Scope
 
-1. **Real-time Processing** — GPU-optimized pipeline for live video streams; edge deployment
-2. **Extended Modalities** — 3D facial reconstruction, speech semantic verification, background consistency
-3. **Federated Learning** — Privacy-preserving distributed training across organizations
-4. **Smart Contracts** — On-chain provenance verification, decentralized storage, NFT-based certificates
+1. **Real-time Processing** â€” GPU-optimized pipeline for live video streams; edge deployment
+2. **Extended Modalities** â€” 3D facial reconstruction, speech semantic verification, background consistency
+3. **Federated Learning** â€” Privacy-preserving distributed training across organizations
+4. **Smart Contracts** â€” On-chain provenance verification, decentralized storage, NFT-based certificates
 
 ---
 
@@ -345,7 +345,7 @@ project/
 
 ## License
 
-MIT License — See repository for details.
-#   P R I S M - P r o v e n a n c e - R i c h - I n t e g r i t y - S e m a n t i c - M e d i a - A u t h e n t i c a t i o n - S y s t e m  
- #   P R I S M - P r o v e n a n c e - R i c h - I n t e g r i t y - S e m a n t i c - M e d i a - A u t h e n t i c a t i o n - S y s t e m  
+MIT License â€” See repository for details.
+ 
+ 
  
