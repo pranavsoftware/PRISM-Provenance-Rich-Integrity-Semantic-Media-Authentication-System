@@ -1,4 +1,4 @@
-﻿# Blockchain-Based Audio-Visual Content Authentication System
+# Blockchain-Based Audio-Visual Content Authentication System
 
 ## PRISM â€” 5-Pillar Deepfake Detection with Blockchain Provenance
 
@@ -346,6 +346,3 @@ project/
 ## License
 
 MIT License â€” See repository for details.
- 
- 
- 
