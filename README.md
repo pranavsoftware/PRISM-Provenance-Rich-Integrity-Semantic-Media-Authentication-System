@@ -347,4 +347,5 @@ project/
 
 MIT License — See repository for details.
 #   P R I S M - P r o v e n a n c e - R i c h - I n t e g r i t y - S e m a n t i c - M e d i a - A u t h e n t i c a t i o n - S y s t e m  
+ #   P R I S M - P r o v e n a n c e - R i c h - I n t e g r i t y - S e m a n t i c - M e d i a - A u t h e n t i c a t i o n - S y s t e m  
  
