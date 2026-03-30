@@ -1,0 +1,67 @@
+{
+  "model_sha256": "be9d63b5b7f021d65c8ad65537861eb6508c21aab2c2c4727cfa0f6b640af02a",
+  "fingerprint_db_sha256": "7f1412a524db9549d8aa76e418e80246bef0371b53ee90d088f5560a75571b3f",
+  "fingerprint_shape": [
+    2000,
+    473
+  ],
+  "fingerprint_dim": 473,
+  "provenance_valid": true,
+  "provenance_blocks": 10,
+  "provenance_errors": [],
+  "spot_check_pass": 10,
+  "spot_check_total": 10,
+  "tamper_detection_proof": true,
+  "labels_sha256": "7b694bdbe3fea1540354ab2c2b62ae6b2f4450bde29ace40f05c1a3e95dd2076",
+  "train_idx_sha256": "191b344c4cda48dfc89b15722e525db9544fdabe7690128967f96fbca5eaf5f2",
+  "test_idx_sha256": "7488e02aaed1a5241c50bcce002ae53a3ede8456c2c8971f71d2c51d7bcc51e4",
+  "dataset_size": 2000,
+  "class_balance": {
+    "authentic": 1000,
+    "deepfake": 1000
+  },
+  "metrics": {
+    "cmpa_cnn": {
+      "acc": 0.7433333333333333,
+      "auc": 0.7488888888888889,
+      "f1": 0.7780979827089337,
+      "precision": 0.6852791878172588,
+      "recall": 0.9
+    },
+    "random_forest": {
+      "acc": 0.7233333333333334,
+      "auc": 0.7848888888888889,
+      "f1": 0.7381703470031545
+    },
+    "gbm": {
+      "acc": 0.7466666666666667,
+      "auc": 0.7708444444444444,
+      "f1": 0.7639751552795031
+    },
+    "ensemble": {
+      "acc": 0.75,
+      "auc": 0.7638222222222222,
+      "f1": 0.7706422018348624,
+      "precision": 0.711864406779661,
+      "recall": 0.84
+    }
+  },
+  "timestamp": "2026-03-30T13:05:50.326394",
+  "system": "PRISM \u2014 Pillar-Resilient Integrated Signature Mapping",
+  "version": "2.0",
+  "pillars": [
+    "VideoHash",
+    "Audio",
+    "Geo-FRTA",
+    "Motion",
+    "AVSync"
+  ],
+  "innovations": [
+    "PRISM \u2014 Pillar-Resilient Integrated Signature Mapping (473-dim)",
+    "CMPA \u2014 Cross-Modal Pillar Attention Network",
+    "FRTA \u2014 Face Region Texture Analysis",
+    "PTS \u2014 Probabilistic Two-Stage Scoring",
+    "DHPC \u2014 Dual-Hash Provenance Chain"
+  ],
+  "certificate_hash": "609d194c1f81fbe80a021829196f00c06efccacd00ea87751bdaf23540446b83"
+}

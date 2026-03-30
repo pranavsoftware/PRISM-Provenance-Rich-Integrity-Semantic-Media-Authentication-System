@@ -1,0 +1,45 @@
+{
+  "method": "SHA-256",
+  "comparisons": [
+    {
+      "video_1": "video_000",
+      "video_2": "video_001",
+      "hash_1": "26fe887b96cbf3c6f9a18ff4b1e75aec...",
+      "hash_2": "ba1c9cdbcdf00d2d1ed46cba1f57ddc2...",
+      "fingerprint_similarity": 0.8913,
+      "hash_match": false
+    },
+    {
+      "video_1": "video_001",
+      "video_2": "video_002",
+      "hash_1": "ba1c9cdbcdf00d2d1ed46cba1f57ddc2...",
+      "hash_2": "9c17746f338e20e20591c5c65d49b638...",
+      "fingerprint_similarity": 0.8858,
+      "hash_match": false
+    },
+    {
+      "video_1": "video_002",
+      "video_2": "video_003",
+      "hash_1": "9c17746f338e20e20591c5c65d49b638...",
+      "hash_2": "dca0b07abb1c4b470f5d151b6c07ac3d...",
+      "fingerprint_similarity": 0.9347,
+      "hash_match": false
+    },
+    {
+      "video_1": "video_003",
+      "video_2": "video_004",
+      "hash_1": "dca0b07abb1c4b470f5d151b6c07ac3d...",
+      "hash_2": "a6e84cf89a4b7dd7a528701fec2281c6...",
+      "fingerprint_similarity": 0.8976,
+      "hash_match": false
+    },
+    {
+      "video_1": "video_004",
+      "video_2": "video_005",
+      "hash_1": "a6e84cf89a4b7dd7a528701fec2281c6...",
+      "hash_2": "aea8739c170314d96af81bbcad8132dd...",
+      "fingerprint_similarity": 0.8797,
+      "hash_match": false
+    }
+  ]
+}

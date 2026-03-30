@@ -1,0 +1,132 @@
+[
+  {
+    "index": 0,
+    "timestamp": "2026-03-30T13:03:25.276972",
+    "video_id": "test/001367.mp4",
+    "fp_hash": "c34fee6c268416baa64dc17e6fae8078b8b8369303f8539edc6adf9944064aac",
+    "verdict": "AUTHENTIC",
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "metadata": {
+      "confidence": 0.8406214276566595,
+      "stage": 2
+    },
+    "block_hash": "c61aa71324a049f34421bc5a4ddf0a6ce4ee2054d723fe70adad0643e4a643f0"
+  },
+  {
+    "index": 1,
+    "timestamp": "2026-03-30T13:03:25.607977",
+    "video_id": "test/001049.mp4",
+    "fp_hash": "3ca48738c94ee9baeeb9cb669a524294bc00ae2d89956bcfd6dc60faf67999da",
+    "verdict": "FAKE",
+    "prev_hash": "c61aa71324a049f34421bc5a4ddf0a6ce4ee2054d723fe70adad0643e4a643f0",
+    "metadata": {
+      "confidence": 0.6837985140191278,
+      "stage": 1
+    },
+    "block_hash": "d27ca75c7a25adb6b0a905b8e05ebd8c51707b039f90ab2caa92d93a319995b8"
+  },
+  {
+    "index": 2,
+    "timestamp": "2026-03-30T13:03:26.043596",
+    "video_id": "train/000523.mp4",
+    "fp_hash": "1e184750126215b5b0061adb9b4b54123e422478fd5f4b17211a8521522c3c37",
+    "verdict": "FAKE",
+    "prev_hash": "d27ca75c7a25adb6b0a905b8e05ebd8c51707b039f90ab2caa92d93a319995b8",
+    "metadata": {
+      "confidence": 0.6681805045871793,
+      "stage": 1
+    },
+    "block_hash": "9052199fef543f66dbf7fe389ce59b591e48511cd4849e215ba378262185533d"
+  },
+  {
+    "index": 3,
+    "timestamp": "2026-03-30T13:03:26.396517",
+    "video_id": "test/000928.mp4",
+    "fp_hash": "dfb75f522ec3c3b0694e17043a717ac04d493c1d2a6f9130737437ef37a4745a",
+    "verdict": "FAKE",
+    "prev_hash": "9052199fef543f66dbf7fe389ce59b591e48511cd4849e215ba378262185533d",
+    "metadata": {
+      "confidence": 0.6921730315753911,
+      "stage": 1
+    },
+    "block_hash": "5aa89c0e31a4db1b614935ca1cd7f4238c3787466d1c50572fe7e45e6b37b2c1"
+  },
+  {
+    "index": 4,
+    "timestamp": "2026-03-30T13:03:26.741514",
+    "video_id": "test/001240.mp4",
+    "fp_hash": "1c6ea322caa39aa12e4f51c0b7dd510053669c37c2f86c1131c39575004f4808",
+    "verdict": "FAKE",
+    "prev_hash": "5aa89c0e31a4db1b614935ca1cd7f4238c3787466d1c50572fe7e45e6b37b2c1",
+    "metadata": {
+      "confidence": 0.6789051647895159,
+      "stage": 1
+    },
+    "block_hash": "c5b138fb99254101d2b326fba1f2b54f8bf1340a4caa094268d542300f869f8f"
+  },
+  {
+    "index": 5,
+    "timestamp": "2026-03-30T13:03:27.108076",
+    "video_id": "test/001066.mp4",
+    "fp_hash": "1ec103bc12a26b8fc50c50efbdfb0106d89f36dba9489ee32af7d077a15eef1d",
+    "verdict": "FAKE",
+    "prev_hash": "c5b138fb99254101d2b326fba1f2b54f8bf1340a4caa094268d542300f869f8f",
+    "metadata": {
+      "confidence": 0.5693068507233796,
+      "stage": 1
+    },
+    "block_hash": "59649a7bf90e0f17329847d779d856128cb8433057456956db55582ab35ce7d5"
+  },
+  {
+    "index": 6,
+    "timestamp": "2026-03-30T13:03:27.494092",
+    "video_id": "test/000459.mp4",
+    "fp_hash": "4d883505a318191ff21edb3f589c9b407d7c7585ae2e5e572a2062a1ac645e37",
+    "verdict": "FAKE",
+    "prev_hash": "59649a7bf90e0f17329847d779d856128cb8433057456956db55582ab35ce7d5",
+    "metadata": {
+      "confidence": 0.7076669341166247,
+      "stage": 1
+    },
+    "block_hash": "abe1d0bc92649edb7666596f6f728a767611cbfd0a3c53c2e2e4976f75435c5d"
+  },
+  {
+    "index": 7,
+    "timestamp": "2026-03-30T13:03:27.889593",
+    "video_id": "train/000797.mp4",
+    "fp_hash": "c67ac1977890d078e0f8493cc3e0b569983e38745ee1a00f42d9f2d0a1fb2bfb",
+    "verdict": "FAKE",
+    "prev_hash": "abe1d0bc92649edb7666596f6f728a767611cbfd0a3c53c2e2e4976f75435c5d",
+    "metadata": {
+      "confidence": 0.6100811291919604,
+      "stage": 1
+    },
+    "block_hash": "bff118aec3851cc8afccfe077a3c7bb8cc855740f6d2954bd5c1017f2cb5a7d8"
+  },
+  {
+    "index": 8,
+    "timestamp": "2026-03-30T13:03:28.203610",
+    "video_id": "train/000841.mp4",
+    "fp_hash": "7983db5763e66cee51e203d1f17cb086fa56686b04f1fa6fdd7f74ab0a196b37",
+    "verdict": "FAKE",
+    "prev_hash": "bff118aec3851cc8afccfe077a3c7bb8cc855740f6d2954bd5c1017f2cb5a7d8",
+    "metadata": {
+      "confidence": 0.5550892309940749,
+      "stage": 1
+    },
+    "block_hash": "91f21655e7dd976c342954d646a791654ea3c377adb7a80ec0975bd8b84df49e"
+  },
+  {
+    "index": 9,
+    "timestamp": "2026-03-30T13:03:28.534596",
+    "video_id": "test/001013.mp4",
+    "fp_hash": "c49836c7c27f94db119e6603f0b33c6de93c74061ed65ab3ce512b2314ab584b",
+    "verdict": "FAKE",
+    "prev_hash": "91f21655e7dd976c342954d646a791654ea3c377adb7a80ec0975bd8b84df49e",
+    "metadata": {
+      "confidence": 0.6645705394861838,
+      "stage": 1
+    },
+    "block_hash": "2bbb3acc2ddd9d67b290334be33684935cead46f814276203c9074fa74865b92"
+  }
+]
